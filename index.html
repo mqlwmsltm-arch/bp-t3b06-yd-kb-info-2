@@ -1,372 +1,370 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <title>여의도 노래방 정보 — 인원·시간대·목적 별 맞춤 선택 가이드</title>
-  <meta name="description" content="여의도 지역 노래방을 인원 규모·이용 시간·목적에 따라 상세히 비교합니다. 소규모 모임, 대규모 파티, 이른 시간 예약, 늦은 시간 이용 시 고려사항을 전문적으로 안내합니다.">
-  <meta name="keywords" content="여의도 노래방, 노래방 비교, 여의도 파티, 이른시간 노래방, 대규모 노래방, 소규모 노래방, 노래방 예약 팁">
-  <link rel="canonical" href="https://yeouido-song-room.program-school.online/">
-  <meta property="og:title" content="여의도 노래방 정보 — 인원·시간대·목적 별 맞춤 선택 가이드">
-  <meta property="og:description" content="여의도 지역 노래방을 인원 규모·이용 시간·목적에 따라 상세히 비교합니다. 소규모 모임, 대규모 파티, 이른 시간 예약, 늦은 시간 이용 시 고려사항을 전문적으로 안내합니다.">
-  <meta property="og:url" content="https://yeouido-song-room.program-school.online/">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://yeouido-song-room.program-school.online/assets/og-image.jpg">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="여의도 노래방 정보 — 인원·시간대·목적 별 맞춤 선택 가이드">
-  <meta name="twitter:description" content="여의도 지역 노래방을 인원 규모·이용 시간·목적에 따라 상세히 비교합니다.">
-  <meta name="twitter:image" content="https://yeouido-song-room.program-school.online/assets/og-image.jpg">
-  <meta name="bpaas-design-system" content="editorial-apple">
-  <meta name="bpaas-design-theme" content="kr-noir-burgundy">
-  <style>
-    /* Typography */
-    @font-face {
-      font-family: 'PlayfairDisplay';
-      src: local('serif');
-    }
-    @font-face {
-      font-family: 'CormorantGaramond';
-      src: local('serif');
-    }
-    @font-face {
-      font-family: 'NotoSerifKR';
-      src: local('serif');
-    }
-    :root {
-      --primary:#120808;
-      --secondary:#fdf5f5;
-      --accent:#6b1a1a;
-      --font-display:'PlayfairDisplay', 'CormorantGaramond', serif;
-      --font-body:'NotoSerifKR', serif;
-    }
-    body {
-      margin:0;
-      font-family:var(--font-body);
-      color:var(--secondary);
-      background-color:#0a0a0a;
-      line-height:1.6;
-    }
-    header, nav, main, footer {display:block;}
-    header {background:var(--primary); color:var(--secondary); padding:0;}
-    .q-main-f9hd {
-      position:relative;
-      overflow:hidden;
-    }
-    .q-main-f9hd::before {
-      content:"";
-      position:absolute;
-      inset:0;
-      background:url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2220%22 height=%2220%22><rect width=%2220%22 height=%2220%22 fill=%22%23000000%22 opacity=%220.02%22/></svg>');
-      opacity:0.08;
-    }
-    .hero {
-      height:70vh;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      background:linear-gradient(135deg, #0a0a0a 40%, #151515);
-      background-image:url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2240%22 height=%2240%22><path d=%22M0 0 L40 40 M40 0 L0 40%22 stroke=%22%23333%22 stroke-width=%221%22/></svg>');
-    }
-    .hero h1 {
-      font-family:var(--font-display);
-      font-size:3.5rem;
-      color:var(--secondary);
-      text-shadow:0 0 4px var(--accent);
-      margin:0;
-    }
-    .hero h1::first-letter {
-      float:left;
-      font-size:5rem;
-      line-height:1;
-      margin-right:.2em;
-      color:var(--accent);
-    }
-    nav ul {
-      list-style:none;
-      margin:0;
-      padding:0;
-      display:flex;
-      gap:2rem;
-    }
-    nav a {
-      text-decoration:none;
-      color:var(--secondary);
-      font-variant:small-caps;
-      letter-spacing:0.08em;
-    }
-    nav a:hover {color:var(--accent);}
-    .container {max-width:1200px;margin:auto;padding:0 2rem;}
-    section {padding:96px 0; position:relative;}
-    .section-inner {border:4px double var(--accent);padding:48px;background:var(--primary);}
-    .section-inner h2 {
-      font-family:var(--font-display);
-      font-size:2.2rem;
-      margin-bottom:24px;
-      color:var(--secondary);
-      position:relative;
-    }
-    .section-inner h2::after {
-      content:"";
-      position:absolute;
-      left:0;
-      bottom:-8px;
-      width:60px;
-      height:3px;
-      background:var(--accent);
-    }
-    .label {
-      font-variant:small-caps;
-      letter-spacing:0.1em;
-      color:var(--accent);
-    }
-    .card {
-      border:2px solid var(--accent);
-      padding:24px;
-      margin-bottom:24px;
-      background:var(--primary);
-      transform:rotate(var(--rotate,0deg));
-    }
-    .card:nth-child(odd){--rotate:0.5deg;}
-    .card:nth-child(even){--rotate:-0.5deg;}
-    .timeline {border-left:3px solid var(--accent);margin-left:2rem;padding-left:2rem;}
-    .timeline-item {position:relative;margin-bottom:2rem;}
-    .timeline-item::before {
-      content:attr(data-roman);
-      position:absolute;
-      left:-2.5rem;
-      top:0;
-      color:var(--secondary);
-      font-weight:bold;
-    }
-    button {
-      border:none;
-      background:var(--accent);
-      color:#fff;
-      padding:12px 24px;
-      cursor:pointer;
-      font-family:var(--font-display);
-      text-transform:uppercase;
-      letter-spacing:0.05em;
-    }
-    button:hover {background:#8b2d2d;}
-    .dot-nav {
-      position:fixed;
-      right:24px;
-      bottom:24px;
-      display:flex;
-      flex-direction:column;
-      gap:8px;
-      z-index:1000;
-    }
-    .dot-nav a {
-      width:12px;
-      height:12px;
-      border-radius:50%;
-      background:#555;
-    }
-    .dot-nav a.active {background:var(--accent);}
-    @media (max-width:768px) {
-      nav ul {flex-direction:column;background:var(--primary);position:absolute;right:0;top:60px;width:200px;display:none;}
-      nav ul.show {display:flex;}
-      .hamburger {display:block;cursor:pointer;position:absolute;right:24px;top:18px;}
-      .hamburger div {width:25px;height:3px;background:#fff;margin:5px 0;}
-    }
-    @media (max-width:768px) {
-      .hero h1 {font-size:2.5rem;}
-    }
-  </style>
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"LocalBusiness",
-    "name":"여의도 노래방 정보",
-    "url":"https://yeouido-song-room.program-school.online/",
-    "image":"https://yeouido-song-room.program-school.online/assets/logo.png",
-    "address":{
-      "@type":"PostalAddress",
-      "addressLocality":"여의도",
-      "addressRegion":"서울특별시",
-      "addressCountry":"KR"
-    },
-    "priceRange":"✱✱✱✱✱",
-    "telephone":null,
-    "author":{
-      "@type":"Person",
-      "name":"노래방 현장 가이드"
-    }
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"FAQPage",
-    "mainEntity":[
-      {
-        "@type":"Question",
-        "name":"소규모 모임에 적합한 노래방은 어떻게 선택하나요?",
-        "acceptedAnswer":{
-          "@type":"Answer",
-          "text":"인원 2~5명일 경우 방음 시설이 좋은 소형 방을 우선 고려하십시오. 예약 전 최소 30분 이상 이용 가능 시간을 확인하고, 음향 장비가 최신인지 살펴보는 것이 좋습니다."
-        }
-      },
-      {
-        "@type":"Question",
-        "name":"밤 10시 이후에 노래방을 이용할 때 주의할 점은?",
-        "acceptedAnswer":{
-          "@type":"Answer",
-          "text":"심야 이용 시 추가 요금이 발생할 수 있으며, 일부 시설은 조용한 분위기를 유지하기 위해 음량 제한을 적용합니다. 사전에 운영 시간과 추가 비용을 확인하세요."
-        }
-      },
-      {
-        "@type":"Question",
-        "name":"대규모 파티를 위해서는 어떤 기준을 검토해야 할까요?",
-        "acceptedAnswer":{
-          "@type":"Answer",
-          "text":"인원 15명 이상이면 대형 파티룸을 선택하고, 전용 음향 시스템과 조명 옵션을 제공하는지 확인하세요. 또한 음료 및 간식 서비스가 포함된 패키지를 비교하면 비용 효율성을 높일 수 있습니다."
-        }
-      },
-      {
-        "@type":"Question",
-        "name":"여의도 노래방을 처음 방문할 때 꼭 체크해야 할 사항은?",
-        "acceptedAnswer":{
-          "@type":"Answer",
-          "text":"예약 가능 시간, 현장 결제 여부, 그리고 방 내부 청결 상태를 사전에 확인하십시오. 특히 주말은 예약이 조기 마감되므로 미리 전화 혹은 온라인 예약을 권장합니다."
-        }
-      }
-    ]
-  }
-  </script>
+ <meta charset="UTF-8">
+ <title>여의도 노래방 정보 — 인원·시간대·목적 별 맞춤 선택 가이드</title>
+ <meta name="description" content="여의도 지역 노래방을 인원 규모·이용 시간·목적에 따라 상세히 비교합니다. 소규모 모임, 대규모 파티, 이른 시간 예약, 늦은 시간 이용 시 고려사항을 전문적으로 안내합니다.">
+ <meta name="keywords" content="여의도 노래방, 노래방 비교, 여의도 파티, 이른시간 노래방, 대규모 노래방, 소규모 노래방, 노래방 예약 팁">
+ <link rel="canonical" href="https://yeouido-song-room.program-school.online/">
+ <meta property="og:title" content="여의도 노래방 정보 — 인원·시간대·목적 별 맞춤 선택 가이드">
+ <meta property="og:description" content="여의도 지역 노래방을 인원 규모·이용 시간·목적에 따라 상세히 비교합니다. 소규모 모임, 대규모 파티, 이른 시간 예약, 늦은 시간 이용 시 고려사항을 전문적으로 안내합니다.">
+ <meta property="og:url" content="https://yeouido-song-room.program-school.online/">
+ <meta property="og:type" content="website">
+ <meta property="og:image" content="https://yeouido-song-room.program-school.online/assets/og-image.jpg">
+ <meta name="twitter:card" content="summary">
+ <meta name="twitter:title" content="여의도 노래방 정보 — 인원·시간대·목적 별 맞춤 선택 가이드">
+ <meta name="twitter:description" content="여의도 지역 노래방을 인원 규모·이용 시간·목적에 따라 상세히 비교합니다.">
+ <meta name="twitter:image" content="https://yeouido-song-room.program-school.online/assets/og-image.jpg">
+ <style>
+ /* Typography */
+ @font-face {
+ font-family: 'PlayfairDisplay';
+ src: local('serif');
+ }
+ @font-face {
+ font-family: 'CormorantGaramond';
+ src: local('serif');
+ }
+ @font-face {
+ font-family: 'NotoSerifKR';
+ src: local('serif');
+ }
+ :root {
+ --primary:#120808;
+ --secondary:#fdf5f5;
+ --accent:#6b1a1a;
+ --font-display:'PlayfairDisplay', 'CormorantGaramond', serif;
+ --font-body:'NotoSerifKR', serif;
+ }
+ body {
+ margin:0;
+ font-family:var(--font-body);
+ color:var(--secondary);
+ background-color:#0a0a0a;
+ line-height:1.6;
+ }
+ header, nav, main, footer {display:block;}
+ header {background:var(--primary); color:var(--secondary); padding:0;}
+ .q-main-f9hd {
+ position:relative;
+ overflow:hidden;
+ }
+ .q-main-f9hd::before {
+ content:"";
+ position:absolute;
+ inset:0;
+ background:url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2220%22 height=%2220%22><rect width=%2220%22 height=%2220%22 fill=%22%23000000%22 opacity=%220.02%22/></svg>');
+ opacity:0.08;
+ }
+ .hero {
+ height:70vh;
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ background:linear-gradient(135deg, #0a0a0a 40%, #151515);
+ background-image:url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2240%22 height=%2240%22><path d=%22M0 0 L40 40 M40 0 L0 40%22 stroke=%22%23333%22 stroke-width=%221%22/></svg>');
+ }
+ .hero h1 {
+ font-family:var(--font-display);
+ font-size:3.5rem;
+ color:var(--secondary);
+ text-shadow:0 0 4px var(--accent);
+ margin:0;
+ }
+ .hero h1::first-letter {
+ float:left;
+ font-size:5rem;
+ line-height:1;
+ margin-right:.2em;
+ color:var(--accent);
+ }
+ nav ul {
+ list-style:none;
+ margin:0;
+ padding:0;
+ display:flex;
+ gap:2rem;
+ }
+ nav a {
+ text-decoration:none;
+ color:var(--secondary);
+ font-variant:small-caps;
+ letter-spacing:0.08em;
+ }
+ nav a:hover {color:var(--accent);}
+ .container {max-width:1200px;margin:auto;padding:0 2rem;}
+ section {padding:96px 0; position:relative;}
+ .section-inner {border:4px double var(--accent);padding:48px;background:var(--primary);}
+ .section-inner h2 {
+ font-family:var(--font-display);
+ font-size:2.2rem;
+ margin-bottom:24px;
+ color:var(--secondary);
+ position:relative;
+ }
+ .section-inner h2::after {
+ content:"";
+ position:absolute;
+ left:0;
+ bottom:-8px;
+ width:60px;
+ height:3px;
+ background:var(--accent);
+ }
+ .label {
+ font-variant:small-caps;
+ letter-spacing:0.1em;
+ color:var(--accent);
+ }
+ .card {
+ border:2px solid var(--accent);
+ padding:24px;
+ margin-bottom:24px;
+ background:var(--primary);
+ transform:rotate(var(--rotate,0deg));
+ }
+ .card:nth-child(odd){--rotate:0.5deg;}
+ .card:nth-child(even){--rotate:-0.5deg;}
+ .timeline {border-left:3px solid var(--accent);margin-left:2rem;padding-left:2rem;}
+ .timeline-item {position:relative;margin-bottom:2rem;}
+ .timeline-item::before {
+ content:attr(data-roman);
+ position:absolute;
+ left:-2.5rem;
+ top:0;
+ color:var(--secondary);
+ font-weight:bold;
+ }
+ button {
+ border:none;
+ background:var(--accent);
+ color:#fff;
+ padding:12px 24px;
+ cursor:pointer;
+ font-family:var(--font-display);
+ text-transform:uppercase;
+ letter-spacing:0.05em;
+ }
+ button:hover {background:#8b2d2d;}
+ .dot-nav {
+ position:fixed;
+ right:24px;
+ bottom:24px;
+ display:flex;
+ flex-direction:column;
+ gap:8px;
+ z-index:1000;
+ }
+ .dot-nav a {
+ width:12px;
+ height:12px;
+ border-radius:50%;
+ background:#555;
+ }
+ .dot-nav a.active {background:var(--accent);}
+ @media (max-width:768px) {
+ nav ul {flex-direction:column;background:var(--primary);position:absolute;right:0;top:60px;width:200px;display:none;}
+ nav ul.show {display:flex;}
+ .hamburger {display:block;cursor:pointer;position:absolute;right:24px;top:18px;}
+ .hamburger div {width:25px;height:3px;background:#fff;margin:5px 0;}
+ }
+ @media (max-width:768px) {
+ .hero h1 {font-size:2.5rem;}
+ }
+ </style>
+ <script type="application/ld+json">
+ {
+ "@context":"https://schema.org",
+ "@type":"LocalBusiness",
+ "name":"여의도 노래방 정보",
+ "url":"https://yeouido-song-room.program-school.online/",
+ "image":"https://yeouido-song-room.program-school.online/assets/logo.png",
+ "address":{
+ "@type":"PostalAddress",
+ "addressLocality":"여의도",
+ "addressRegion":"서울특별시",
+ "addressCountry":"KR"
+ },
+ "priceRange":"✱✱✱✱✱",
+ "telephone":null,
+ "author":{
+ "@type":"Person",
+ "name":"노래방 현장 가이드"
+ }
+ }
+ </script>
+ <script type="application/ld+json">
+ {
+ "@context":"https://schema.org",
+ "@type":"FAQPage",
+ "mainEntity":[
+ {
+ "@type":"Question",
+ "name":"소규모 모임에 적합한 노래방은 어떻게 선택하나요?",
+ "acceptedAnswer":{
+ "@type":"Answer",
+ "text":"인원 2~5명일 경우 방음 시설이 좋은 소형 방을 우선 고려하십시오. 예약 전 최소 30분 이상 이용 가능 시간을 확인하고, 음향 장비가 최신인지 살펴보는 것이 좋습니다."
+ }
+ },
+ {
+ "@type":"Question",
+ "name":"밤 10시 이후에 노래방을 이용할 때 주의할 점은?",
+ "acceptedAnswer":{
+ "@type":"Answer",
+ "text":"심야 이용 시 추가 요금이 발생할 수 있으며, 일부 시설은 조용한 분위기를 유지하기 위해 음량 제한을 적용합니다. 사전에 운영 시간과 추가 비용을 확인하세요."
+ }
+ },
+ {
+ "@type":"Question",
+ "name":"대규모 파티를 위해서는 어떤 기준을 검토해야 할까요?",
+ "acceptedAnswer":{
+ "@type":"Answer",
+ "text":"인원 15명 이상이면 대형 파티룸을 선택하고, 전용 음향 시스템과 조명 옵션을 제공하는지 확인하세요. 또한 음료 및 간식 서비스가 포함된 패키지를 비교하면 비용 효율성을 높일 수 있습니다."
+ }
+ },
+ {
+ "@type":"Question",
+ "name":"여의도 노래방을 처음 방문할 때 꼭 체크해야 할 사항은?",
+ "acceptedAnswer":{
+ "@type":"Answer",
+ "text":"예약 가능 시간, 현장 결제 여부, 그리고 방 내부 청결 상태를 사전에 확인하십시오. 특히 주말은 예약이 조기 마감되므로 미리 전화 혹은 온라인 예약을 권장합니다."
+ }
+ }
+ ]
+ }
+ </script>
 </head>
 <body class="q-main-f9hd">
-  <header class="q-box-j4d8">
-    <div class="container">
-      <h1 class="r-list-013z">여의도 노래방 정보</h1>
-      <nav>
-        <div class="hamburger" aria-label="메뉴 열기" onclick="document.querySelector('nav ul').classList.toggle('show')">
-          <div></div><div></div><div></div>
-        </div>
-        <ul>
-          <li><a href="#selection">선택 기준</a></li>
-          <li><a href="#timing">시간대 별 팁</a></li>
-          <li><a href="#purpose">목적별 활용</a></li>
-          <li><a href="#faq">FAQ</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <section class="hero q-main-f9hd">
-    <h1>어둠 속에 빛나는 선택, <br>당신의 파티를 완성합니다.</h1>
-  </section>
-  <main>
-    <section id="selection">
-      <div class="container section-inner">
-        <h2>인원 규모에 따른 선택 기준</h2>
-        <p class="label">소규모 그룹</p>
-        <p>인원 <span aria-hidden="true" data-t="a1b2c3d4">●</span>2~5명이라면, 방음이 우수한 1~2인용 방을 우선 검토합니다. 방 내부가 작아도 최신 마이크와 무선 헤드셋이 구비돼 있으면 음질 손실 없이 즐길 수 있습니다.</p>
-        <p>소규모 전용 방은 일반적으로 예약 후 30분 단위로 이용 가능하므로, 짧은 회식이나 친목 모임에 최적화됩니다.</p>
-        <p class="label">대규모 파티</p>
-        <p>인원 15명 이상이면, 대형 파티룸을 확보하고 전용 조명·음향 시스템을 확인해야 합니다. 파티룸은 보통 4시간 이상 대여 가능하며, 추가 음료·음식 옵션이 포함된 패키지를 비교하면 비용 효율성을 높일 수 있습니다.</p>
-        <p>대규모 파티에서는 사전 현장 답사를 통해 방 내부 규모와 출입 동선, 화재 안전 설비를 점검하는 것이 필수적입니다.</p>
-        <span aria-hidden="true" data-t="e5f6g7h8">○</span>
-      </div>
-    </section>
+ <header class="q-box-j4d8">
+ <div class="container">
+ <h1 class="r-list-013z">여의도 노래방 정보</h1>
+ <nav>
+ <div class="hamburger" aria-label="메뉴 열기" onclick="document.querySelector('nav ul').classList.toggle('show')">
+ <div></div><div></div><div></div>
+ </div>
+ <ul>
+ <li><a href="#selection">선택 기준</a></li>
+ <li><a href="#timing">시간대 별 팁</a></li>
+ <li><a href="#purpose">목적별 활용</a></li>
+ <li><a href="#faq">FAQ</a></li>
+ </ul>
+ </nav>
+ </div>
+ </header>
+ <section class="hero q-main-f9hd">
+ <h1>어둠 속에 빛나는 선택, <br>당신의 파티를 완성합니다.</h1>
+ </section>
+ <main>
+ <section id="selection">
+ <div class="container section-inner">
+ <h2>인원 규모에 따른 선택 기준</h2>
+ <p class="label">소규모 그룹</p>
+ <p>인원 <span aria-hidden="true" data-t="a1b2c3d4">●</span>2~5명이라면, 방음이 우수한 1~2인용 방을 우선 검토합니다. 방 내부가 작아도 최신 마이크와 무선 헤드셋이 구비돼 있으면 음질 손실 없이 즐길 수 있습니다.</p>
+ <p>소규모 전용 방은 일반적으로 예약 후 30분 단위로 이용 가능하므로, 짧은 회식이나 친목 모임에 최적화됩니다.</p>
+ <p class="label">대규모 파티</p>
+ <p>인원 15명 이상이면, 대형 파티룸을 확보하고 전용 조명·음향 시스템을 확인해야 합니다. 파티룸은 보통 4시간 이상 대여 가능하며, 추가 음료·음식 옵션이 포함된 패키지를 비교하면 비용 효율성을 높일 수 있습니다.</p>
+ <p>대규모 파티에서는 사전 현장 답사를 통해 방 내부 규모와 출입 동선, 화재 안전 설비를 점검하는 것이 필수적입니다.</p>
+ <span aria-hidden="true" data-t="e5f6g7h8">○</span>
+ </div>
+ </section>
 
-    <section id="timing">
-      <div class="container section-inner">
-        <h2>시간대 별 이용 팁</h2>
-        <div class="timeline">
-          <div class="timeline-item" data-roman="I">
-            <h3 class="label">이른 아침 (08:00~12:00)</h3>
-            <p>조용한 분위기와 낮은 인원 밀도가 특징이며, 대부분의 노래방이 저렴한 시간대 요금제를 운영합니다. 이때는 음량 제한이 없고, 조명도 부드럽게 유지됩니다.</p>
-          </div>
-          <div class="timeline-item" data-roman="II">
-            <h3 class="label">점심·오후 (12:00~17:00)</h3>
-            <p>업무 회식이나 스터디 모임에 적합합니다. 일부 방은 비즈니스 패키지를 제공해 프로젝터와 화이트보드 사용이 가능하니, 사전 문의를 권장합니다.</p>
-          </div>
-          <div class="timeline-item" data-roman="III">
-            <h3 class="label">저녁·심야 (18:00~23:00)</h3>
-            <p>가장 활발한 시간대로, 예약이 빨리 마감됩니다. 심야 이용 시 추가 요금과 음량 제한이 존재할 수 있으니, 사전 확인이 필요합니다.</p>
-          </div>
-          <div class="timeline-item" data-roman="IV">
-            <h3 class="label">새벽 (00:00~06:00)</h3>
-            <p>특수 이벤트나 24시간 운영점은 제한된 서비스(음료 판매 제한 등)와 높은 부가요금이 적용될 수 있습니다. 보안 및 안전 안내를 꼭 숙지하세요.</p>
-          </div>
-        </div>
-        <span aria-hidden="true" data-t="i9j0k1l2">·</span>
-      </div>
-    </section>
+ <section id="timing">
+ <div class="container section-inner">
+ <h2>시간대 별 이용 팁</h2>
+ <div class="timeline">
+ <div class="timeline-item" data-roman="I">
+ <h3 class="label">이른 아침 (08:00~12:00)</h3>
+ <p>조용한 분위기와 낮은 인원 밀도가 특징이며, 대부분의 노래방이 저렴한 시간대 요금제를 운영합니다. 이때는 음량 제한이 없고, 조명도 부드럽게 유지됩니다.</p>
+ </div>
+ <div class="timeline-item" data-roman="II">
+ <h3 class="label">점심·오후 (12:00~17:00)</h3>
+ <p>업무 회식이나 스터디 모임에 적합합니다. 일부 방은 비즈니스 패키지를 제공해 프로젝터와 화이트보드 사용이 가능하니, 사전 문의를 권장합니다.</p>
+ </div>
+ <div class="timeline-item" data-roman="III">
+ <h3 class="label">저녁·심야 (18:00~23:00)</h3>
+ <p>가장 활발한 시간대로, 예약이 빨리 마감됩니다. 심야 이용 시 추가 요금과 음량 제한이 존재할 수 있으니, 사전 확인이 필요합니다.</p>
+ </div>
+ <div class="timeline-item" data-roman="IV">
+ <h3 class="label">새벽 (00:00~06:00)</h3>
+ <p>특수 이벤트나 24시간 운영점은 제한된 서비스(음료 판매 제한 등)와 높은 부가요금이 적용될 수 있습니다. 보안 및 안전 안내를 꼭 숙지하세요.</p>
+ </div>
+ </div>
+ <span aria-hidden="true" data-t="i9j0k1l2">·</span>
+ </div>
+ </section>
 
-    <section id="purpose">
-      <div class="container section-inner">
-        <h2>목적에 맞는 활용 방안</h2>
-        <p class="label">친목·회식</p>
-        <p>친목 목적이라면, 방 하나를 고정하고 다양한 테마곡 리스트를 사전 업로드해 두는 것이 효율적입니다. 회식 시에는 음료 무제한 옵션을 제공하는 방을 선택하고, 좌석 배치를 자유롭게 재배치할 수 있는 플렉시블 구조를 확인하십시오.</p>
-        <p class="label">연습·녹음</p>
-        <p>프로 연습용 방은 음향 설계가 뛰어나며, 마이크와 스피커의 주파수 응답이 넓습니다. 녹음이 필요할 경우 방음 부스와 별도 레코딩 장비를 대여할 수 있는지를 사전에 문의하세요.</p>
-        <p class="label">이벤트·공연</p>
-        <p>대규모 이벤트는 무대와 조명 설치가 가능한 전용 스테이지가 있는 방을 선택합니다. 사전 현장 점검 시 무대 크기와 전원 용량을 확인하고, 음향 전문가와의 협업 가능 여부를 체크하십시오.</p>
-        <span aria-hidden="true" data-t="m3n4o5p6">~</span>
-      </div>
-    </section>
+ <section id="purpose">
+ <div class="container section-inner">
+ <h2>목적에 맞는 활용 방안</h2>
+ <p class="label">친목·회식</p>
+ <p>친목 목적이라면, 방 하나를 고정하고 다양한 테마곡 리스트를 사전 업로드해 두는 것이 효율적입니다. 회식 시에는 음료 무제한 옵션을 제공하는 방을 선택하고, 좌석 배치를 자유롭게 재배치할 수 있는 플렉시블 구조를 확인하십시오.</p>
+ <p class="label">연습·녹음</p>
+ <p>프로 연습용 방은 음향 설계가 뛰어나며, 마이크와 스피커의 주파수 응답이 넓습니다. 녹음이 필요할 경우 방음 부스와 별도 레코딩 장비를 대여할 수 있는지를 사전에 문의하세요.</p>
+ <p class="label">이벤트·공연</p>
+ <p>대규모 이벤트는 무대와 조명 설치가 가능한 전용 스테이지가 있는 방을 선택합니다. 사전 현장 점검 시 무대 크기와 전원 용량을 확인하고, 음향 전문가와의 협업 가능 여부를 체크하십시오.</p>
+ <span aria-hidden="true" data-t="m3n4o5p6">~</span>
+ </div>
+ </section>
 
-    <section id="faq">
-      <div class="container section-inner">
-        <h2>자주 묻는 질문</h2>
-        <div class="card">
-          <h3 class="label">소규모 모임에 적합한 노래방은 어떻게 선택하나요?</h3>
-          <p>인원 2~5명일 경우 방음 시설이 좋은 소형 방을 우선 고려하십시오. 예약 전 최소 30분 이상 이용 가능 시간을 확인하고, 음향 장비가 최신인지 살펴보는 것이 좋습니다.</p>
-        </div>
-        <div class="card">
-          <h3 class="label">밤 10시 이후에 노래방을 이용할 때 주의할 점은?</h3>
-          <p>심야 이용 시 추가 요금이 발생할 수 있으며, 일부 시설은 조용한 분위기를 유지하기 위해 음량 제한을 적용합니다. 사전에 운영 시간과 추가 비용을 확인하세요.</p>
-        </div>
-        <div class="card">
-          <h3 class="label">대규모 파티를 위해서는 어떤 기준을 검토해야 할까요?</h3>
-          <p>인원 15명 이상이면 대형 파티룸을 선택하고, 전용 음향 시스템과 조명 옵션을 제공하는지 확인하세요. 또한 음료 및 간식 서비스가 포함된 패키지를 비교하면 비용 효율성을 높일 수 있습니다.</p>
-        </div>
-      </div>
-    </section>
+ <section id="faq">
+ <div class="container section-inner">
+ <h2>자주 묻는 질문</h2>
+ <div class="card">
+ <h3 class="label">소규모 모임에 적합한 노래방은 어떻게 선택하나요?</h3>
+ <p>인원 2~5명일 경우 방음 시설이 좋은 소형 방을 우선 고려하십시오. 예약 전 최소 30분 이상 이용 가능 시간을 확인하고, 음향 장비가 최신인지 살펴보는 것이 좋습니다.</p>
+ </div>
+ <div class="card">
+ <h3 class="label">밤 10시 이후에 노래방을 이용할 때 주의할 점은?</h3>
+ <p>심야 이용 시 추가 요금이 발생할 수 있으며, 일부 시설은 조용한 분위기를 유지하기 위해 음량 제한을 적용합니다. 사전에 운영 시간과 추가 비용을 확인하세요.</p>
+ </div>
+ <div class="card">
+ <h3 class="label">대규모 파티를 위해서는 어떤 기준을 검토해야 할까요?</h3>
+ <p>인원 15명 이상이면 대형 파티룸을 선택하고, 전용 음향 시스템과 조명 옵션을 제공하는지 확인하세요. 또한 음료 및 간식 서비스가 포함된 패키지를 비교하면 비용 효율성을 높일 수 있습니다.</p>
+ </div>
+ </div>
+ </section>
 
-    <section id="author">
-      <div class="container section-inner">
-        <h2>작성자 소개</h2>
-        <p>노래방 현장 가이드 – 여의도 지역 엔터테인먼트 현장을 5년간 조사·정리해온 로컬 전문가. 현장 방문 기록과 이용자 피드백을 기반으로 신뢰성 높은 정보를 제공합니다.</p>
-        <script type="application/ld+json">
-        {
-          "@context":"https://schema.org",
-          "@type":"Person",
-          "name":"노래방 현장 가이드",
-          "description":"여의도 노래방 정보를 5년간 정리해온 로컬 가이드."
-        }
-        </script>
-      </div>
-    </section>
-  </main>
-  <footer class="q-box-j4d8">
-    <div class="container">
-      <p>© 2026 여의도 노래방 정보. All rights reserved.</p>
-    </div>
-  </footer>
+ <section id="author">
+ <div class="container section-inner">
+ <h2>작성자 소개</h2>
+ <p>노래방 현장 가이드 – 여의도 지역 엔터테인먼트 현장을 5년간 조사·정리해온 로컬 전문가. 현장 방문 기록과 이용자 피드백을 기반으로 신뢰성 높은 정보를 제공합니다.</p>
+ <script type="application/ld+json">
+ {
+ "@context":"https://schema.org",
+ "@type":"Person",
+ "name":"노래방 현장 가이드",
+ "description":"여의도 노래방 정보를 5년간 정리해온 로컬 가이드."
+ }
+ </script>
+ </div>
+ </section>
+ </main>
+ <footer class="q-box-j4d8">
+ <div class="container">
+ <p>© 2026 여의도 노래방 정보. All rights reserved.</p>
+ </div>
+ </footer>
 
-  <!-- Floating dot navigation -->
-  <div class="dot-nav" aria-label="섹션 네비게이션">
-    <a href="#selection" class="dot"></a>
-    <a href="#timing" class="dot"></a>
-    <a href="#purpose" class="dot"></a>
-    <a href="#faq" class="dot"></a>
-    <a href="#author" class="dot"></a>
-  </div>
-  <script>
-    const sections = document.querySelectorAll('section[id]');
-    const dots = document.querySelectorAll('.dot-nav a');
-    const observer = new IntersectionObserver((entries)=>{
-      entries.forEach(entry=>{
-        if(entry.isIntersecting){
-          const id = entry.target.id;
-          dots.forEach(dot=>dot.classList.toggle('active', dot.getAttribute('href')===`#${id}`));
-        }
-      });
-    },{threshold:0.5});
-    sections.forEach(sec=>observer.observe(sec));
-  </script>
+ <!-- Floating dot navigation -->
+ <div class="dot-nav" aria-label="섹션 네비게이션">
+ <a href="#selection" class="dot"></a>
+ <a href="#timing" class="dot"></a>
+ <a href="#purpose" class="dot"></a>
+ <a href="#faq" class="dot"></a>
+ <a href="#author" class="dot"></a>
+ </div>
+ <script>
+ const sections = document.querySelectorAll('section[id]');
+ const dots = document.querySelectorAll('.dot-nav a');
+ const observer = new IntersectionObserver((entries)=>{
+ entries.forEach(entry=>{
+ if(entry.isIntersecting){
+ const id = entry.target.id;
+ dots.forEach(dot=>dot.classList.toggle('active', dot.getAttribute('href')===`#${id}`));
+ }
+ });
+ },{threshold:0.5});
+ sections.forEach(sec=>observer.observe(sec));
+ </script>
 </body>
 </html>
